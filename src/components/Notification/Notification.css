@@ -1,0 +1,80 @@
+.notification-main{
+    display: flex;
+    flex-direction: row;
+    border: 0.2mm solid rgb(192, 192, 192);
+    position: fixed;
+    align-self: center;
+    width: 10cm;
+    height: 2cm;
+    /* background-color: rgb(40, 55, 74); */
+    background-color: rgb(32, 38, 46);
+    border-radius: 0.1cm;
+    z-index: 3000;
+    user-select: none;
+    animation-name: notify;
+    animation-duration: 0.6s;
+    transition: 0.6s;
+}
+
+.notification-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 0.2mm solid red; */
+    width: 25%;
+    font-size: 1cm;
+}
+
+.notification-logo span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.5mm solid rgb(255, 255, 255);
+    background-color:#ff6200 ;
+    width: 1.5cm;
+    height: 1.5cm;
+    border-radius: 1.2cm;
+    /* background-color: black; */
+}
+
+.notification-status{
+    display: flex;
+    font-size: 0.5cm;
+    font-weight: 600;
+    justify-content: center;
+    align-items: center;
+    /* border: 0.2mm solid blue; */
+    width: 75%;
+    margin-left: -0.5cm;
+}
+
+.notification-exit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.1cm;
+    margin-right: 0.2cm;
+}
+
+
+.notification-exit span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.6mm solid rgb(255, 255, 255);
+    width: 1cm;
+    height: 1cm;
+    border-radius: 1cm;
+    font-size: 0.4cm;
+    background-color: rgb(177, 66, 66);
+    cursor: pointer;
+}
+
+.notification-exit span:hover{
+    background-color: rgb(208, 53, 53);
+}
+
+@keyframes notify {
+    from{transform: translateY(-2cm);}
+    to{transform: translateY(0cm)}
+}

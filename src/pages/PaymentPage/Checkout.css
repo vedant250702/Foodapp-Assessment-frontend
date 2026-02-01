@@ -1,0 +1,170 @@
+.checkout-page {
+  background: #f8f9fa;
+  color: black;
+  /* min-height: 100vh; */
+  height: fit-content;
+  padding: 32px 16px;
+  overflow-y: auto;
+  padding-bottom: 64px;
+}
+
+.checkout-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 32px;
+  color: #222;
+}
+
+.checkout-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 32px;
+}
+
+.order-items{
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+}
+
+.delivery-details {
+  background: white;
+  border-radius: 12px;
+  padding: 44px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+}
+
+h2 {
+  margin: 0 0 20px 0;
+  font-size: 1.4rem;
+  color: #333;
+}
+
+.items-list {
+  margin-bottom: 24px;
+}
+
+.order-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.order-item:last-child {
+  border-bottom: none;
+}
+
+.item-details h4 {
+  margin: 0 0 4px;
+}
+
+.item-details p {
+  margin: 0;
+  color: #666;
+}
+
+.item-subtotal {
+  font-weight: 600;
+  color: #e65100;
+}
+
+.order-total {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 2px solid #eee;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.form-summary {
+  margin-top: 32px;
+}
+
+.final-total {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 24px;
+  padding: 16px 0;
+  border-top: 2px solid #eee;
+  border-bottom: 2px solid #eee;
+}
+
+.amount {
+  color: #e65100;
+}
+
+.submit-order-btn {
+  width: 100%;
+  padding: 16px;
+  background: #28a745;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.15rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.submit-order-btn:disabled {
+  background: #aaa;
+  cursor: not-allowed;
+}
+
+.empty-state {
+  text-align: center;
+  color: #777;
+  padding: 40px 0;
+}
+
+.empty-state button {
+  margin-top: 16px;
+  padding: 10px 20px;
+  background: #ff6200;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* ────────────────────────────────
+   Mobile – stack vertically
+───────────────────────────────── */
+@media (max-width: 992px) {
+  .checkout-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}

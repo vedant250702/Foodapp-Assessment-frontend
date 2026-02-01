@@ -1,0 +1,187 @@
+.order-card {
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  margin-bottom: 24px;
+  overflow: hidden;
+  border: 1px solid #f0f0f0;
+  transition: all 0.25s ease;
+}
+
+.order-card:hover {
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
+  transform: translateY(-2px);
+}
+
+/* Top orange accent line (Swiggy style) */
+.order-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background: #fc8019;
+}
+
+/* Header */
+.order-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 20px;
+  background: #fffaf5;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.order-id-date {
+  flex: 1;
+}
+
+.order-date {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 4px;
+}
+
+.order-id {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #333;
+}
+
+.order-status-badge {
+  padding: 8px 18px;
+  border-radius: 50px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  background: #fff3e0;
+  color: #fc8019;
+  border: 1px solid #ffb74d;
+}
+
+/* Customer Info */
+.customer-info {
+  padding: 20px;
+  background: #ffffff;
+}
+
+.customer-info h3 {
+  margin: 0 0 8px;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #333;
+}
+
+.customer-phone {
+  margin: 0 0 6px;
+  color: #555;
+  font-size: 1.05rem;
+}
+
+.customer-address {
+  margin: 0;
+  color: #666;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Items List */
+.order-items-list {
+  padding: 0 20px 20px;
+}
+
+.order-items-list h4 {
+  margin: 0 0 16px;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #333;
+}
+
+.order-item-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.order-item-row:last-child {
+  border-bottom: none;
+}
+
+.item-name-qty {
+  flex: 1;
+}
+
+.item-name {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #222;
+}
+
+.item-quantity {
+  margin-left: 12px;
+  color: #777;
+  font-size: 1rem;
+}
+
+.item-subtotal {
+  font-weight: 700;
+  color: #fc8019;
+  font-size: 1.15rem;
+}
+
+/* Total Section */
+.order-total-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: #fffaf5;
+  border-top: 1px solid #f0f0f0;
+}
+
+.total-label {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #222;
+}
+
+.total-value {
+  font-size: 1.65rem;
+  font-weight: 800;
+  color: #fc8019;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .order-card {
+    margin-bottom: 20px;
+    border-radius: 12px;
+  }
+
+  .order-header {
+    flex-direction: column;
+    gap: 12px;
+    padding: 16px;
+  }
+
+  .order-status-badge {
+    align-self: flex-start;
+  }
+
+  .order-item-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .item-subtotal {
+    align-self: flex-end;
+  }
+
+  .total-value {
+    font-size: 1.5rem;
+  }
+}

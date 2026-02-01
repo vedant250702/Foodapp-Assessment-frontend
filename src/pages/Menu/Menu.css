@@ -1,0 +1,25 @@
+.menu-page {
+    top: 1cm;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    background-color: #d3d3d3;
+}
+
+.menu-items{
+    display: flex;
+    flex-direction: row;
+    gap: 0.2cm;
+    position: relative;
+    padding: 0.1cm 0.4cm;
+    /* align-items: center; */
+    align-content: flex-start;
+    justify-content: center;
+    width: 90%;
+    height: 90%;
+    background-color: rgb(214, 214, 214);
+    flex-wrap: wrap;
+    overflow-y: auto;
+}

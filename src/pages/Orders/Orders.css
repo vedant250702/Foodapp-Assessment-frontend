@@ -1,0 +1,40 @@
+.orders-main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: 0.2mm solid red; */
+    margin-top: 1cm;
+    overflow-y: auto;
+}
+
+.orders-child{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    /* border: 0.2mm solid red; */
+    width: 60%;
+    height: fit-content;
+    padding: 0.4cm;
+}
+
+.no-orders-message {
+  text-align: center;
+  padding: 80px 20px;
+  background: rgb(223, 223, 223);
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  margin: 20px auto;
+  max-width: 500px;
+}
+
+.no-orders-message h2 {
+  color: #e65100;
+  margin-bottom: 12px;
+  font-size: 1.8rem;
+}
+
+.no-orders-message p {
+  color: #666;
+  margin: 8px 0;
+  font-size: 1.1rem;
+}
