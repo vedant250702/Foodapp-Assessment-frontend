@@ -8,7 +8,8 @@
   background-color: rgb(235, 235, 235);
   width: 100%;
   min-height: 6cm;
-  max-height: 6.1cm;
+  max-height: 6.5cm;
+  height: fit-content;
   max-width: 15cm;
   /* min-width: 12cm; */
 }
@@ -111,7 +112,7 @@
   margin: 0;
   font-size: 13px;
   max-height: 3cm;
-  min-height: 2.5cm;
+  min-height: 1.5cm;
   color: #6b7280;
   line-height: 1.4;
   /* border: 0.2mm solid red; */
