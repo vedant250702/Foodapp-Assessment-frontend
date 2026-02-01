@@ -78,3 +78,12 @@
     from{transform: translateY(-2cm);}
     to{transform: translateY(0cm)}
 }
+
+
+@media only screen and (max-device-width:480px) {
+    .notification-main{
+
+        transform: scale(0.8);
+
+}
+}
